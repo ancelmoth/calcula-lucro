@@ -35,7 +35,7 @@ input[type="number"], input[type="text"] {
     }
 
     #mensagem-erro {
-        font-size: 16px;
+        font-size: 160px;
         color: red;
         text-align: center;
         margin-top: 20px;
