@@ -30,3 +30,5 @@ function limpar(){
     document.getElementById("servico").value = ""
     document.getElementById("preco").value = ""
 }
+
+
