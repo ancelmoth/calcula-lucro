@@ -33,3 +33,12 @@ input[type="number"], input[type="text"] {
     .botao:hover {
         background-color: #3E8E41;
     }
+
+    #mensagem-erro {
+        font-size: 16px;
+        color: red;
+        text-align: center;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    

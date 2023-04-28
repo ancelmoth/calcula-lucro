@@ -4,9 +4,12 @@ function calcular() {
 
     // Verificar se o valor do custo foi inserido
     if (isNaN(custo)) {
-        document.getElementById("preco").value = "Faz o L de novo e enfia no rabo fi de rapariga!!";
+        document.getElementById("mensagem-erro").style.display = "block";
         return;
     }
+
+    // Esconder a mensagem de erro, caso ela tenha sido exibida anteriormente
+    document.getElementById("mensagem-erro").style.display = "none";
 
     // Obter os valores da margem de lucro e do valor do serviço
     var margem = parseFloat(document.getElementById("margem").value);
