@@ -1,17 +1,6 @@
 function calcular() {
-    // Obter o valor do custo do produto
+    // Obter os valores do custo, margem de lucro e valor do serviço
     var custo = parseFloat(document.getElementById("custo").value);
-
-    // Verificar se o valor do custo foi inserido
-    if (isNaN(custo)) {
-        document.getElementById("mensagem-erro").style.display = "block";
-        return;
-    }
-
-    // Esconder a mensagem de erro, caso ela tenha sido exibida anteriormente
-    document.getElementById("mensagem-erro").style.display = "none";
-
-    // Obter os valores da margem de lucro e do valor do serviço
     var margem = parseFloat(document.getElementById("margem").value);
     var servico = parseFloat(document.getElementById("servico").value);
 

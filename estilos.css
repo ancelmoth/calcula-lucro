@@ -34,11 +34,4 @@ input[type="number"], input[type="text"] {
         background-color: #3E8E41;
     }
 
-    #mensagem-erro {
-        font-size: 160px;
-        color: red;
-        text-align: center;
-        margin-top: 20px;
-        padding: 20px;
-    }
-    
+   
