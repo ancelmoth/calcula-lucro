@@ -4,6 +4,12 @@ function calcular() {
     var margem = parseFloat(document.getElementById("margem").value);
     var servico = parseFloat(document.getElementById("servico").value);
 
+    // Verificar se os valores de custo e margem foram preenchidos
+    if (!custo || !margem) {
+        alert("Os campos Custo e Margem são obrigatórios");
+        return;
+    }
+
     // Calcular o preço de venda do produto
     var precoProduto = custo * (1 + (margem / 100));
 
@@ -16,4 +22,11 @@ function calcular() {
 
     // Exibir os resultados nas caixas de texto
     document.getElementById("preco").value = "R$ " + precoTotal;
+}
+
+function limpar(){
+    document.getElementById("custo").value = ""
+    document.getElementById("margem").value = ""
+    document.getElementById("servico").value = ""
+    document.getElementById("preco").value = ""
 }

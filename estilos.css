@@ -1,7 +1,20 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-color: #F4F4F4;
-}
+} */
+
+body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #a7b3a8;
+      }
+      
+
+
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -34,4 +47,44 @@ input[type="number"], input[type="text"] {
         background-color: #3E8E41;
     }
 
-   
+    .botao-red {
+        background-color: #af4f4c;
+        color: #FFF;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .botao:hover {
+        background-color: #3E8E41;
+    }
+
+
+    
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      
+      .box {
+        background-color: #f8f2f2;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 480px;
+        width: 100%;
+      }
+      
+      .input-container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+      }
+      
+      .button-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      
