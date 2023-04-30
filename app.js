@@ -4,6 +4,13 @@ function calcular() {
     var margem = parseFloat(document.getElementById("margem").value);
     var servico = parseFloat(document.getElementById("servico").value);
 
+
+    if (custo < 0 || margem < 0 || servico < 0) {
+        alert("Os campos Custo, Margem e Serviço devem ser maiores ou iguais a zero");
+        return limpar() //aqui eu chamo a função limpar para zerar os campos caso algum numero seja menor que zero
+    } 
+       
+    
     // Verificar se os valores de custo e margem foram preenchidos
     if (!custo || !margem) {
         alert("Os campos Custo e Margem são obrigatórios");
